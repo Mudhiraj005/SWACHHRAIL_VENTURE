@@ -1,39 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SwachhRail - Digital Cleanliness Monitoring System</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#0077b6',
-              secondary: '#00b4d8',
-              accent: '#48cae4',
-              success: '#2a9d8f',
-              light: '#ade8f4',
-              background: '#f8f9fa',
-            }
-          }
-        }
-      }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body class="bg-background">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">🚆 SwachhRail</a>
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="report.html" class="nav-link">Report Issue</a></li>
+                <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app-root">
+        <section class="hero">
+            <div class="container">
+                <h1>Cleaner, Safer, Smarter Railways.</h1>
+                <p>Welcome to SwachhRail, a digital platform to ensure cleanliness and hygiene across the Indian Railways network. Help us maintain a pristine environment by reporting issues instantly.</p>
+                <a href="report.html" class="btn btn-primary">Report an Issue Now</a>
+            </div>
+        </section>
+        <section class="info container">
+            <div class="card problem">
+                <h3>The Problem 🚮</h3>
+                <p>Maintaining cleanliness in a vast network like Indian Railways is a monumental task. Unattended litter, dirty coaches, and unhygienic stations can lead to passenger dissatisfaction and health concerns. Timely reporting and resolution are often challenging.</p>
+            </div>
+            <div class="card solution">
+                <h3>Our Solution ✨</h3>
+                <p>SwachhRail empowers passengers to become cleanliness monitors. With our easy-to-use platform, you can report an issue in seconds. This data is instantly available to the admin team, enabling swift action and ensuring a cleaner journey for everyone.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SwachhRail. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
