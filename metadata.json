@@ -1,0 +1,5 @@
+{
+  "name": "SwachhRail - Digital Cleanliness Monitoring System",
+  "description": "A simple, responsive web application for passengers to report cleanliness issues on railways and for administrators to monitor and manage these reports.",
+  "requestFramePermissions": []
+}
